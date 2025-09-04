@@ -1,0 +1,49 @@
+# --- Python cache & compiled files ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Virtual environment ---
+venv/
+.env/
+
+# --- Build & distribution ---
+build/
+dist/
+*.egg-info/
+
+# --- Logs & temporary files ---
+*.log
+*.tmp
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- System files ---
+.DS_Store
+Thumbs.db
+
+# --- Project-specific ignores ---
+# Datasets
+data/
+# Customs
+annotate/sample/
+annotate/module/simpleHRNet/weights
+demo/
+*.mp4
+
+# Training outputs & results
+outputs/
+results/
+
+# Weights
+*.pt
+*.pth
+
+# Model checkpoints
+checkpoints/
+
+# Local configs (keep if machine-specific)
+config_local.yaml
+
