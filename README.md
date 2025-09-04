@@ -6,13 +6,8 @@ Annotation file is saved in CSV format.
 
 Contains modified code from [Supervision](https://github.com/roboflow/supervision) and [simple-HRNet](https://github.com/stefanopini/simple-HRNet).
 
----
-
-## Demo
-
-### HTML embed (for custom sizing)
 <p align="center">
-  <img src="demo.gif" width="60%" alt="Project demo GIF">
+  <img src="demo.gif" width="100%" alt="Project demo GIF">
 </p>
 
 ---
@@ -24,10 +19,6 @@ Contains modified code from [Supervision](https://github.com/roboflow/supervisio
 git clone https://github.com/mumulmaulana/SkeletonOnTheBall.git
 cd path/to/this/repo
 
-# (optional) create & activate venv
-python -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
-
 # install deps
 pip install -r requirements.txt
 ```
@@ -35,11 +26,13 @@ pip install -r requirements.txt
 ## Prerequisites
 
 - Download the required weights for pose estimation model from the [https://github.com/leoxiaobin/deep-high-resolution-net.pytorch](https://github.com/leoxiaobin/deep-high-resolution-net.pytorch)
+	- The one being used in the demo is [pose_hrnet_w48_384x288.pth](https://drive.google.com/open?id=1UoJhTtjHNByZSm96W3yFTfU5upJnsKiS)
 - Put the weights inside `annotate/module/simpleHRNet/weights`
 
 ## Usage
 
-Step 1. Put all the desired videos to be annotated in `sample` folder inside `annotate`
+Step 1. Put all the desired videos to be annotated in `sample` folder inside `annotate`.
+
 Step 2. Run the following to perform player detection and pose estimation.
 ```
 cd annotate
